@@ -3,7 +3,7 @@ class App extends React.Component {
         return (
             <div className="container">
                 <h1>Welcome to My Blog</h1>
-                <p>This is the homepage of your custom blog website.</p>
+                <p>This is the place holder for my blog/resume page.</p>
             </div>
         );
     }
