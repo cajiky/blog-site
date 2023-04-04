@@ -1,3 +1,9 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ThemeProvider } from '@mui/material/styles';
+import {lightTheme, darkTheme} from '../styles/themes';
+
+
 class App extends React.Component {
     render() {
         return (
@@ -7,6 +13,13 @@ class App extends React.Component {
             </div>
         );
     }
+    componentDidMount(){
+        console.log('our component did mout!')
+    }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+<ThemeProvider theme={darkTheme}>
+    <App />
+</ThemeProvider>,
+document.getElementById('root'));
